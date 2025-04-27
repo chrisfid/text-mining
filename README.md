@@ -1,7 +1,26 @@
+# Usage
+
 Create your virtual environment
-`python -m venv .venv`
+`py -3.11 -m venv .venv`
+
+Warning! Do not use the following:
+`python3.11 -m venv .venv`
+as it will create Unix environment and some deps won't work.
 
 Activate the virtual environment
+`source .venv/Scripts/activate`
+
+Then
+`pip install -r requirements.txt`
+
+# First time setup
+
+Create your virtual environment
+`python3.11 -m venv .venv`
+
+Activate the virtual environment
+`source .venv/bin/activate` 
+or
 `source .venv/Scripts/activate`
 
 Install nltk
